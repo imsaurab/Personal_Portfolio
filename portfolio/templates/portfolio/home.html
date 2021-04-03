@@ -1,0 +1,523 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png"  href="{% static 'portfolio/favicon.png' %}">
+
+
+
+    <link rel="stylesheet" href="{% static 'portfolio/base.css' %}">  
+   <link rel="stylesheet" href="{% static 'portfolio/main.css' %}">
+   <link rel="stylesheet" href="{% static 'portfolio/vendor.css' %}">  
+   
+   <script src="{% static '/portfolio/modernizr.js' %}" type="text/javascript"></script>
+   <script src="{% static '/portfolio/pace.min.js' %}" type="text/javascript"></script>
+   
+
+    <title>Saurabh Kumar Singh</title>
+    
+</head>
+<body id ="top">
+  <header>   	
+    <div class="row">
+      <div class="top-bar">
+        <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+        <div class="logo">
+          <img src="{% static 'portfolio/logo.png' %}"  width="245" height="50">
+            
+         </div>		      
+         
+        <nav id="main-nav-wrap">
+         <ul class="main-navigation">
+           <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+           <li><a class="smoothscroll"  href="#about" title="">About</a></li>
+           <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+           <li><a class="smoothscroll"  href="#services" title="">Expertise</a></li>
+           <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+           <li>
+            <a role= "smoothscroll" href= "{% url 'blog:home_blog' %}" title= "">Blog</a>
+          </li>
+                
+         </ul>
+       </nav>    		   		
+        </div> <!-- /top-bar -->
+    </div> <!-- /row --> 		
+    </header> <!-- /header -->
+    
+    
+    <!-- intro section
+       ================================================== -->
+       <section id="intro">   
+    
+        <div class="intro-overlay"></div>	
+    
+        <div class="intro-content">
+            <div class="row">
+    
+                <div class="col-twelve">
+    
+                    <h5>Hello, World.</h5>
+                    <h1>I'm Saurabh Kumar Singh.</h1>
+    
+                    <p class="intro-position">
+                        <span>Python Developer</span>
+                  
+                        <span>Artificial Intelligence/ Machine Learning/Deep Learning</span>
+                        <span>HTML, CSS, Javascript & Django</span>
+                    </p>
+    
+                    <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+    
+                </div>  
+                
+            </div>   		 		
+        </div> <!-- /intro-content --> 
+    
+        <ul class="intro-social">        
+            <li><a href="https://www.twitter.com/the_knownface/"><i class="fa fa-twitter"></i></a></li>
+          
+            <li><a href="https://www.linkedin.com/in/saurabh-kumar-singh-828350154/"><i class="fa fa-linkedin"></i></a></li>
+           
+            <li><a href="https://www.instagram.com/t.h.e_saurabh/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.github.com/imsaurab/"><i class="fa fa-github"></i></a></li>
+         </ul> <!-- /intro-social --> 
+        </section> <!-- /intro -->     	
+    
+      <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <h5>About</h5>
+        <h1>Let me introduce myself.</h1>
+
+        <div class="intro-info">
+
+          <img src="{% static 'portfolio/saurabh.jpg' %}" alt="Profile Picture">
+
+          <p class="lead">My self Saurabh Kumar Singh. I have done my Bachelor's in Computer Application from BBD University ,Lucknow. in 2020</p>
+        </div>   			
+
+      </div>   		
+    </div> <!-- /section-intro -->
+
+  
+    <div class="row about-content">
+
+      <div class="col-six tab-full">
+        <h3>Profile</h3>
+        <p>To work in a stimulating environment where I can apply and enhance my knowledge, skills to serve the firm to the best of my efforts.
+
+        </p>
+
+        <ul class="info-list">
+          <li>
+            <strong>Fullname:</strong>
+            <span>Saurabh Kumar Singh</span>
+          </li>
+          <li>
+            <strong>Birth Date:</strong>
+            <span>Mar 10, 1999</span>
+          </li>
+          <li>
+            <strong>Website:</strong>
+            <span>.....</span>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <span>sk7602800@gmail.com</span>
+          </li>
+
+        </ul> <!-- /info-list -->
+
+      </div>
+
+      <div class="col-six tab-full">
+
+        <h3>Skills</h3>
+        <p>Little bit experience of Python Programming ,  Web Development , Artificial Intelligence/ Machine Learning/Deep Learning.     I’m compatible on working various operating systems like Linux, windows etc
+</p>
+
+       <ul class="skill-bars">
+          <li>
+            <div class="progress percent80">80%</div>
+            <strong>Web Development</strong>
+          </li>
+          <li>
+         <div class="progress percent70"><span>70%</span></div>
+         <strong>AI/ML/DL</strong>
+       </li>
+          <li>
+            <div class="progress percent85"><span>85%</span></div>
+            <strong> Python</strong>
+          </li>
+         <li>
+            <div class="progress percent85"><span>85%</span></div>
+            <strong>Django</strong>
+          </li>
+          <li>
+         <div class="progress percent75"><span>75%</span></div>
+         <strong>HTML,CSS & Javascript</strong>
+       </li>
+     
+       </ul> <!-- /skill-bars -->		
+      
+      </div>
+
+    </div>
+
+    <div class="row button-section">
+      <div class="col-twelve">
+        <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+        <a href="{% static 'portfolio/saurabh.pdf' %}" title="Download CV" class="button button-primary">Download CV</a>
+      </div>   		
+    </div>
+
+  </section> <!-- /process-->    
+
+<!-- resume Section
+   ================================================== -->
+   <section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">To secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.</p>
+
+   		</div>   		
+   	</div>    <!-- /section-intro-->
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Industrial Training-Cum-Project</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Project Training</h3>
+						<p>feb 2020-May 2020</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4> ANSYST Consulting</h4>
+						<p>
+              Acquired knowledge about Python programming language and various types of machine learning and their algorithms.
+
+            </p>
+					</div>
+    
+        </div> <!-- /timeline-block -->
+
+      </div> <!-- /timeline-wrap -->   			
+
+    </div> <!-- /col-twelve -->
+    
+  </div> <!-- /resume-timeline -->
+
+	<div class="row resume-timeline">
+
+    <div class="col-twelve resume-header">
+
+      <h2>Education</h2>
+
+    </div> <!-- /resume-header -->
+
+    <div class="col-twelve">
+
+      <div class="timeline-wrap">
+
+        <div class="timeline-block">
+
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>Bachelor Degree</h3>
+            <p>August 2017 - June 2020</p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Babu Banarasi Das University, Lucknow(U.P.)</h4>
+            <p>Completed my Bachelors Of Computer Application from BBD University, Lucknow(U.P.) with a CGPA of 8.34. My favourite subjects are Object Oriented Technology And Operating System</p>
+          </div>
+
+        </div> <!-- /timeline-block -->
+
+        <div class="timeline-block">
+
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>XII<sup>th</sup></h3>
+            <p>July 2016 - June 2017</p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Aditya Birla Intermediate College(U.P.)</h4>
+            <p>Completed my XII<sup>th</sup> from ABIC, Renukoot(U.P.) where I had secured 68% marks.</p>
+          </div>
+
+        </div> <!-- /timeline-block -->
+
+        <div class="timeline-block">
+
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>X<sup>th</sup></h3>
+            <p>July 2014 - June 2015</p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Aditya Birla Intermediate College(U.P.)</h4>
+            <p>Completed my X<sup>th</sup> from ABIC, Renukoot(U.P.) where I had secured 78% marks.</p>
+          </div>
+
+        </div> <!-- /timeline-block -->
+
+      </div> <!-- /timeline-wrap -->   			
+
+    </div> <!-- /col-twelve -->
+    
+  </div> <!-- /resume-timeline -->
+ 
+</section> <!-- /features -->
+
+<section id="cta" class="grey-section">
+
+  <div class="row cta-content">
+
+    <div class="col-twelve section-ads">  
+
+        <h2 class="h01"><a href="#">Extra-Curricular Activities</a></h2>
+
+       <p class="lead">
+       Learning how the things work, Playing Cricket, Participated in SOFTWARE EXHIBITION .
+     
+     
+     </p>
+
+                
+
+    </div>
+
+  </div> <!-- /cta-content -->
+
+</section> <!-- /cta --> 
+
+<!-- services Section
+   ================================================== -->
+   <section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Expertise</h5>
+   		</div> 
+       
+    </div> <!-- /section-intro -->
+
+    <div class="row services-content">
+
+      <div id="owl-slider" class="owl-carousel services-list">
+
+         
+       <div class="service">	
+
+         <span class="icon"><i class="icon-window"></i></span>                          
+
+             <div class="service-content">	
+
+               <h3>Web Development</h3>  
+
+               
+
+             </div>	                          
+
+        </div> <!-- /service -->
+
+        
+       
+              
+              
+
+        <div class="service">
+
+          <span class="icon"><i class="icon-terminal"></i></span>
+
+             <div class="service-content">
+
+               <h3>Python Developer</h3>
+             </div>	               
+
+        </div> <!-- /service -->
+
+        <div class="service">
+
+       <span class="icon"><i class="icon-pie-chart"></i></span>
+
+      <div class="service-content">
+
+         <h3>Artificial Intelligence/ Machine Learning/Deep Learning</h3>    
+      </div>	               
+
+     </div> <!-- /service -->
+
+       </div> <!-- /services-list -->
+      
+    </div> <!-- /services-content -->
+   
+ </section> <!-- /services -->	
+
+   	
+<!-- contact
+   ================================================== -->
+   <section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+           
+            LUCKNOW, RENUKOOT<br>
+             INDIA
+            </p>
+
+   		</div>
+
+   		
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>
+			   	Mobile: +919628109283<br>
+			     	
+			   </p>
+
+   		</div>
+       <div class="col-four tab-full ">
+
+        <div class="icon">
+          <i class="icon-mail"></i>
+        </div>
+
+        <h5>Email Me At</h5>
+
+        <p>sk7602800@gmail.com<br>				     
+        </p>
+
+      </div>
+
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">   
+            <li><a href="https://www.twitter.com/the_knownface/"><i class="fa fa-twitter"></i></a></li>
+          
+            <li><a href="https://www.linkedin.com/in/saurabh-kumar-singh-828350154/"><i class="fa fa-linkedin"></i></a></li>
+           
+            <li><a href="https://www.instagram.com/t.h.e_saurabh/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.github.com/imsaurab/"><i class="fa fa-github"></i></a></li>
+                 
+			      </ul> 
+	      </div>
+      </footer>
+      	<div class="col-six tab-full ">
+	      	<div class="copyright">
+<span class="copyright">
+                ©
+				<script>
+                    document.write(new Date().getFullYear())
+				</script> made with <i class="fa fa-heart heart"></i> by Saurabh Kumar Singh
+</span>
+		         </div>
+
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+    
+ <script src="{% static 'portfolio/jquery-2.1.3.min.js' %}" ></script>
+ <script src="{% static 'portfolio/plugins.js' %}" ></script>
+ <script src="{% static 'portfolio/main.js' %}"  ></script>
+
+  
+</body>
+</html>
+
+    
