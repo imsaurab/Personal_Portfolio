@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ['jc^li_#=b+5s-9lgufh!c9)r_g_y5-dq-io1gtyp=+qrp50e9u']
+SECRET_KEY = 'jc^li_#=b+5s-9lgufh!c9)r_g_y5-dq-io1gtyp=+qrp50e9u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -132,6 +132,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "portfolio/static"),
 ]
 
+
+django_heroku.settings(locals())
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
