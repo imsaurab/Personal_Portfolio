@@ -1,2 +1,2 @@
 
-web: gunicorn Personal_Portfolio.wsgi --log-file -
+web: waitress-serve --port=$PORT Personal_Portfolio.wsgi:application 
